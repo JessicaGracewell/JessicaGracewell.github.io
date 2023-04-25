@@ -1,1 +1,1 @@
-var posts=["2023/04/25/IIS安装/","2023/04/24/hello-world/","2023/04/25/Markdown/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2023/04/25/IIS安装/","2023/04/25/Markdown/","2023/04/25/hello-world/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
