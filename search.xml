@@ -4,6 +4,108 @@
   
     
     <entry>
+      <title>Markdown</title>
+      <link href="/2023/07/17/Markdown/"/>
+      <url>/2023/07/17/Markdown/</url>
+      
+        <content type="html"><![CDATA[<p>这是一个使用 <em>Markdown</em> 语法编写的博客示例。</p><span id="more"></span><h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><blockquote><p>这是一段引用</p></blockquote><p>把大象塞进冰箱:<br>1.打开冰箱<br>2.把大象塞进去<br>3.观赏冰箱<br>无序列表</p><ul><li>亚洲</li></ul><ul><li>非洲</li></ul><ul><li>欧洲<br>明天要做的事情</li><li><input disabled="" type="checkbox"> …在urat中文表达式中不是逗号但是是空格的一部分。 （但是，如果您的</li><li><input checked="" disabled="" type="checkbox"> 睡觉</li><li><input checked="" disabled="" type="checkbox"> 打豆豆<br>代码块：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BinaryTree</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> TreeNode root;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BinaryTree</span><span class="params">()</span> &#123;</span><br><span class="line">        root = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">insert</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">null</span>) &#123;</span><br><span class="line">            root = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">cur</span> <span class="operator">=</span> root;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">parent</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">null</span>) &#123;</span><br><span class="line">            parent = cur;</span><br><span class="line">            <span class="keyword">if</span> (value &lt; cur.val) cur = cur.left;</span><br><span class="line">            <span class="keyword">else</span> cur = cur.right; </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (value &lt; parent.val) parent.left = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">        <span class="keyword">else</span> parent.right = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrderTraverse</span><span class="params">()</span> &#123;</span><br><span class="line">        inOrderTraverse(root);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">inOrderTraverse</span><span class="params">(TreeNode node)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (node == <span class="literal">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        inOrderTraverse(node.left);</span><br><span class="line">        System.out.print(node.val + <span class="string">&quot; &quot;</span>);</span><br><span class="line">        inOrderTraverse(node.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TreeNode</span> &#123;</span><br><span class="line">    <span class="type">int</span> val;</span><br><span class="line">    TreeNode left;</span><br><span class="line">    TreeNode right;</span><br><span class="line">    </span><br><span class="line">    TreeNode(<span class="type">int</span> val) &#123;</span><br><span class="line">        <span class="built_in">this</span>.val = val;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h1 id="数学公式："><a href="#数学公式：" class="headerlink" title="数学公式："></a>数学公式：</h1><p>$$$  \[{x_{1,2}} = \frac{{ - b \pm \sqrt {{b^2} - 4ac} }}{{2a}}\]  $$$</p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th align="left">姓名</th><th align="right">年龄</th><th align="center">成绩</th></tr></thead><tbody><tr><td align="left">张三</td><td align="right">19</td><td align="center">99</td></tr><tr><td align="left">educator</td><td align="right">18</td><td align="center">95</td></tr></tbody></table><h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注:"></a>脚注:</h1><p>一键三连<a href="%E7%82%B9%E8%B5%9E%E3%80%81%E6%8A%95%E5%B8%81%E3%80%81%E6%94%B6%E8%97%8F%EF%BC%8C%E6%9C%80%E5%A5%BD%E5%86%8D%E5%85%B3%E6%B3%A8%E4%B8%80%E4%B8%8B%E3%80%82">^三连</a></p><hr><p>哈哈哈哈</p><p><a href="https://baidu.com/" title="一个搜索引擎">百度</a></p><p>[百度][id]<br>[id]:<a href="https://baidu.com/">https://baidu.com</a> “一个搜索引擎”<br>请参考<a href="#%E6%A0%87%E9%A2%981">标题1</a><br>ULR:<br><a href="https://www.baidu.com/">https://www.baidu.com</a></p><p><img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="百度" title="百度搜索"><br><em>斜体</em><br><strong>加粗</strong><br>printf(),<br><u>下划线</u> , :smile:,<br>$\theta&#x3D;x^2$,<br>H<del>2</del>O,<br> X^2^<br> &#x3D;&#x3D;这是一段高亮文字&#x3D;&#x3D;</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IIS安装</title>
+      <link href="/2023/07/17/IIS%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/07/17/IIS%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<p>IIS </p><span id="more"></span><center><p><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.001.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.002.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.003.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.004.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.005.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.006.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.007.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.008.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.009.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.010.jpeg">    </center></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows服务器 </tag>
+            
+            <tag> IIS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C语言学习路线</title>
+      <link href="/2023/07/17/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+      <url>/2023/07/17/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+      
+        <content type="html"><![CDATA[<p>C语言是一种广泛使用的编程语言，它具有高效、灵活、可移植等特点，被应用于操作系统、嵌入式系统、图形处理、网络编程等领域。学习C语言不仅可以掌握一门强大的工具，还可以培养良好的编程思维和习惯。本文将介绍一种适合初学者的C语言学习路线，希望能够帮助你快速入门和提高。 </p><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p>首先，你需要了解C语言的基本概念和语法，包括数据类型、变量、常量、运算符、表达式、输入输出、控制流程、函数、数组、指针等。这些是C语言的核心内容，也是后续学习的基础。你可以通过阅读经典的教材《C程序设计语言》（K&amp;R）或者《C Primer Plus》来学习这些知识，也可以参考一些在线的教程和视频课程，如<a href="https://www.runoob.com/cprogramming/c-tutorial.html">菜鸟教程</a>或<a href="https://www.imooc.com/learn/249">慕课网</a>。在学习的过程中，你需要多做练习，尝试编写一些简单的程序，如计算器、猜数字游戏、排序算法等，来巩固你的理解和技能。 </p><h2 id="进阶知识"><a href="#进阶知识" class="headerlink" title="进阶知识"></a>进阶知识</h2><p>在掌握了C语言的基础知识后，你可以进一步学习一些进阶的知识和技巧，如结构体、联合体、枚举、位运算、预处理器、文件操作、内存管理、错误处理等。这些知识可以让你更深入地理解C语言的工作原理和特性，也可以让你编写更复杂和高效的程序。你可以通过阅读《C和指针》或《C陷阱与缺陷》来学习这些知识，也可以参考一些在线的资源，如<a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks</a>或<a href="http://c.biancheng.net/c/">C语言中文网</a>。在学习的过程中，你需要多阅读一些优秀的开源代码，如<a href="https://github.com/torvalds/linux">Linux内核</a>或<a href="https://github.com/sqlite/sqlite">SQLite</a>，来观察和模仿一些编程规范和惯用法。 </p><h2 id="实践项目"><a href="#实践项目" class="headerlink" title="实践项目"></a>实践项目</h2><p>在学习了C语言的进阶知识后，你可以尝试用C语言实现一些实用的项目，如简单的计算器、文本编辑器、聊天室、HTTP服务器等。这些项目可以让你将所学的知识应用于实际问题中，也可以让你锻炼你的编程能力和解决问题的能力。你可以通过参考一些在线的教程和案例来实现这些项目，如<a href="https://www.udemy.com/course/learn-c-by-building-projects/">Learn C by Building Projects</a>或<a href="https://www.programiz.com/c-programming/projects">C Projects</a>。在实现项目的过程中，你需要多使用一些工具和库来辅助你的开发，如编译器（gcc）、调试器（gdb）、版本控制（git）、标准库（libc）、数学库（math.h）、字符串库（string.h）等。 </p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>C语言是一种广泛使用的编程语言，它具有高效、灵活、可移植等特点，被应用于操作系统、嵌入式系统、图形处理、网络编程等领域。学习C语言不仅可以掌握一门强大的工具，还可以培养良好的编程思维和习惯。本文将介绍一种适合初学者的C语言学习路线，希望能够帮助你快速入门和提高。 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的大学生活</title>
+      <link href="/2023/07/17/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
+      <url>/2023/07/17/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="我的大学生活"><a href="#我的大学生活" class="headerlink" title="我的大学生活"></a>我的大学生活</h1><p>大家好，我是一名大三的学生，今天想和大家分享一下我的大学生活，以及我是如何用markdown语法来写博客的。 </p><h2 id="大学生活的点滴"><a href="#大学生活的点滴" class="headerlink" title="大学生活的点滴"></a>大学生活的点滴</h2><p>我的大学生活可以用三个词来概括：忙碌、充实、快乐。忙碌是因为我有很多的课程要学习，很多的作业要完成，很多的考试要准备。充实是因为我在学习之余，也参加了很多的社团活动，结交了很多的朋友，拓展了自己的视野。快乐是因为我在大学里找到了自己的兴趣和方向，也收获了很多的成长和经验。 </p><p>我想给大家举几个例子来具体说明一下我的大学生活。 </p><h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p>我需要学习很多的理论知识，比如数据结构、算法、操作系统、数据库等，也需要学习很多的编程语言，比如C、Java、Python等。我觉得学习这些知识不仅能够锻炼我的逻辑思维和解决问题的能力，也能够让我接触到很多的前沿技术和应用场景。 </p><p>我最喜欢的一门课程是人工智能，这门课程让我对人工智能有了一个全面而深入的了解，也让我对未来的发展充满了期待和憧憬。我在这门课程中学习了很多的人工智能相关的概念、方法和技术，比如搜索、规划、机器学习、深度学习等。我还参与了一个人工智能项目，利用深度学习来识别图像中的物体和场景。这个项目让我体验到了人工智能的魅力和潜力，也让我提高了自己的编程和研究能力。 </p><h3 id="社团"><a href="#社团" class="headerlink" title="社团"></a>社团</h3><p>除了学习之外，我还加入了几个社团，比如编程俱乐部、摄影协会、志愿者团队等。这些社团让我有机会和不同专业、不同兴趣、不同背景的同学交流和合作，也让我有机会参与一些有意义和有趣的活动。 </p><p>编程俱乐部是一个由计算机相关专业的同学组成的社团，我们定期举办一些编程比赛、讲座、培训等活动，旨在提高我们的编程水平和竞争力。我在编程俱乐部中认识了很多优秀而热情的同学，他们给了我很多的帮助和启发。我们一起参加过一些国内外的编程比赛，比如ACM国际大学生程序设计竞赛、 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大学生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>部署Blog到Ubuntu</title>
       <link href="/2023/07/17/%E9%83%A8%E7%BD%B2Blog%E5%88%B0Ubuntu/"/>
       <url>/2023/07/17/%E9%83%A8%E7%BD%B2Blog%E5%88%B0Ubuntu/</url>
@@ -215,108 +317,6 @@
         <tags>
             
             <tag> 生活 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的大学生活</title>
-      <link href="/2023/04/26/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
-      <url>/2023/04/26/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/</url>
-      
-        <content type="html"><![CDATA[<h1 id="我的大学生活"><a href="#我的大学生活" class="headerlink" title="我的大学生活"></a>我的大学生活</h1><p>大家好，我是一名大三的学生，今天想和大家分享一下我的大学生活，以及我是如何用markdown语法来写博客的。 </p><h2 id="大学生活的点滴"><a href="#大学生活的点滴" class="headerlink" title="大学生活的点滴"></a>大学生活的点滴</h2><p>我的大学生活可以用三个词来概括：忙碌、充实、快乐。忙碌是因为我有很多的课程要学习，很多的作业要完成，很多的考试要准备。充实是因为我在学习之余，也参加了很多的社团活动，结交了很多的朋友，拓展了自己的视野。快乐是因为我在大学里找到了自己的兴趣和方向，也收获了很多的成长和经验。 </p><p>我想给大家举几个例子来具体说明一下我的大学生活。 </p><h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p>我需要学习很多的理论知识，比如数据结构、算法、操作系统、数据库等，也需要学习很多的编程语言，比如C、Java、Python等。我觉得学习这些知识不仅能够锻炼我的逻辑思维和解决问题的能力，也能够让我接触到很多的前沿技术和应用场景。 </p><p>我最喜欢的一门课程是人工智能，这门课程让我对人工智能有了一个全面而深入的了解，也让我对未来的发展充满了期待和憧憬。我在这门课程中学习了很多的人工智能相关的概念、方法和技术，比如搜索、规划、机器学习、深度学习等。我还参与了一个人工智能项目，利用深度学习来识别图像中的物体和场景。这个项目让我体验到了人工智能的魅力和潜力，也让我提高了自己的编程和研究能力。 </p><h3 id="社团"><a href="#社团" class="headerlink" title="社团"></a>社团</h3><p>除了学习之外，我还加入了几个社团，比如编程俱乐部、摄影协会、志愿者团队等。这些社团让我有机会和不同专业、不同兴趣、不同背景的同学交流和合作，也让我有机会参与一些有意义和有趣的活动。 </p><p>编程俱乐部是一个由计算机相关专业的同学组成的社团，我们定期举办一些编程比赛、讲座、培训等活动，旨在提高我们的编程水平和竞争力。我在编程俱乐部中认识了很多优秀而热情的同学，他们给了我很多的帮助和启发。我们一起参加过一些国内外的编程比赛，比如ACM国际大学生程序设计竞赛、 </p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 大学生活 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 大学 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C语言学习路线</title>
-      <link href="/2023/04/26/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-      <url>/2023/04/26/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
-      
-        <content type="html"><![CDATA[<p>C语言是一种广泛使用的编程语言，它具有高效、灵活、可移植等特点，被应用于操作系统、嵌入式系统、图形处理、网络编程等领域。学习C语言不仅可以掌握一门强大的工具，还可以培养良好的编程思维和习惯。本文将介绍一种适合初学者的C语言学习路线，希望能够帮助你快速入门和提高。 </p><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p>首先，你需要了解C语言的基本概念和语法，包括数据类型、变量、常量、运算符、表达式、输入输出、控制流程、函数、数组、指针等。这些是C语言的核心内容，也是后续学习的基础。你可以通过阅读经典的教材《C程序设计语言》（K&amp;R）或者《C Primer Plus》来学习这些知识，也可以参考一些在线的教程和视频课程，如<a href="https://www.runoob.com/cprogramming/c-tutorial.html">菜鸟教程</a>或<a href="https://www.imooc.com/learn/249">慕课网</a>。在学习的过程中，你需要多做练习，尝试编写一些简单的程序，如计算器、猜数字游戏、排序算法等，来巩固你的理解和技能。 </p><h2 id="进阶知识"><a href="#进阶知识" class="headerlink" title="进阶知识"></a>进阶知识</h2><p>在掌握了C语言的基础知识后，你可以进一步学习一些进阶的知识和技巧，如结构体、联合体、枚举、位运算、预处理器、文件操作、内存管理、错误处理等。这些知识可以让你更深入地理解C语言的工作原理和特性，也可以让你编写更复杂和高效的程序。你可以通过阅读《C和指针》或《C陷阱与缺陷》来学习这些知识，也可以参考一些在线的资源，如<a href="https://www.geeksforgeeks.org/c-programming-language/">GeeksforGeeks</a>或<a href="http://c.biancheng.net/c/">C语言中文网</a>。在学习的过程中，你需要多阅读一些优秀的开源代码，如<a href="https://github.com/torvalds/linux">Linux内核</a>或<a href="https://github.com/sqlite/sqlite">SQLite</a>，来观察和模仿一些编程规范和惯用法。 </p><h2 id="实践项目"><a href="#实践项目" class="headerlink" title="实践项目"></a>实践项目</h2><p>在学习了C语言的进阶知识后，你可以尝试用C语言实现一些实用的项目，如简单的计算器、文本编辑器、聊天室、HTTP服务器等。这些项目可以让你将所学的知识应用于实际问题中，也可以让你锻炼你的编程能力和解决问题的能力。你可以通过参考一些在线的教程和案例来实现这些项目，如<a href="https://www.udemy.com/course/learn-c-by-building-projects/">Learn C by Building Projects</a>或<a href="https://www.programiz.com/c-programming/projects">C Projects</a>。在实现项目的过程中，你需要多使用一些工具和库来辅助你的开发，如编译器（gcc）、调试器（gdb）、版本控制（git）、标准库（libc）、数学库（math.h）、字符串库（string.h）等。 </p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>C语言是一种广泛使用的编程语言，它具有高效、灵活、可移植等特点，被应用于操作系统、嵌入式系统、图形处理、网络编程等领域。学习C语言不仅可以掌握一门强大的工具，还可以培养良好的编程思维和习惯。本文将介绍一种适合初学者的C语言学习路线，希望能够帮助你快速入门和提高。 </p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> C </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Markdown</title>
-      <link href="/2023/04/25/Markdown/"/>
-      <url>/2023/04/25/Markdown/</url>
-      
-        <content type="html"><![CDATA[<p>这是一个使用 <em>Markdown</em> 语法编写的博客示例。</p><span id="more"></span><h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><blockquote><p>这是一段引用</p></blockquote><p>把大象塞进冰箱:<br>1.打开冰箱<br>2.把大象塞进去<br>3.观赏冰箱<br>无序列表</p><ul><li>亚洲</li></ul><ul><li>非洲</li></ul><ul><li>欧洲<br>明天要做的事情</li><li><input disabled="" type="checkbox"> …在urat中文表达式中不是逗号但是是空格的一部分。 （但是，如果您的</li><li><input checked="" disabled="" type="checkbox"> 睡觉</li><li><input checked="" disabled="" type="checkbox"> 打豆豆<br>代码块：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BinaryTree</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> TreeNode root;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BinaryTree</span><span class="params">()</span> &#123;</span><br><span class="line">        root = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">insert</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">null</span>) &#123;</span><br><span class="line">            root = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">cur</span> <span class="operator">=</span> root;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">parent</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">null</span>) &#123;</span><br><span class="line">            parent = cur;</span><br><span class="line">            <span class="keyword">if</span> (value &lt; cur.val) cur = cur.left;</span><br><span class="line">            <span class="keyword">else</span> cur = cur.right; </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (value &lt; parent.val) parent.left = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">        <span class="keyword">else</span> parent.right = <span class="keyword">new</span> <span class="title class_">TreeNode</span>(value);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrderTraverse</span><span class="params">()</span> &#123;</span><br><span class="line">        inOrderTraverse(root);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">inOrderTraverse</span><span class="params">(TreeNode node)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (node == <span class="literal">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        inOrderTraverse(node.left);</span><br><span class="line">        System.out.print(node.val + <span class="string">&quot; &quot;</span>);</span><br><span class="line">        inOrderTraverse(node.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TreeNode</span> &#123;</span><br><span class="line">    <span class="type">int</span> val;</span><br><span class="line">    TreeNode left;</span><br><span class="line">    TreeNode right;</span><br><span class="line">    </span><br><span class="line">    TreeNode(<span class="type">int</span> val) &#123;</span><br><span class="line">        <span class="built_in">this</span>.val = val;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h1 id="数学公式："><a href="#数学公式：" class="headerlink" title="数学公式："></a>数学公式：</h1><p>$$$  \[{x_{1,2}} = \frac{{ - b \pm \sqrt {{b^2} - 4ac} }}{{2a}}\]  $$$</p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th align="left">姓名</th><th align="right">年龄</th><th align="center">成绩</th></tr></thead><tbody><tr><td align="left">张三</td><td align="right">19</td><td align="center">99</td></tr><tr><td align="left">educator</td><td align="right">18</td><td align="center">95</td></tr></tbody></table><h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注:"></a>脚注:</h1><p>一键三连<a href="%E7%82%B9%E8%B5%9E%E3%80%81%E6%8A%95%E5%B8%81%E3%80%81%E6%94%B6%E8%97%8F%EF%BC%8C%E6%9C%80%E5%A5%BD%E5%86%8D%E5%85%B3%E6%B3%A8%E4%B8%80%E4%B8%8B%E3%80%82">^三连</a></p><hr><p>哈哈哈哈</p><p><a href="https://baidu.com/" title="一个搜索引擎">百度</a></p><p>[百度][id]<br>[id]:<a href="https://baidu.com/">https://baidu.com</a> “一个搜索引擎”<br>请参考<a href="#%E6%A0%87%E9%A2%981">标题1</a><br>ULR:<br><a href="https://www.baidu.com/">https://www.baidu.com</a></p><p><img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="百度" title="百度搜索"><br><em>斜体</em><br><strong>加粗</strong><br>printf(),<br><u>下划线</u> , :smile:,<br>$\theta&#x3D;x^2$,<br>H<del>2</del>O,<br> X^2^<br> &#x3D;&#x3D;这是一段高亮文字&#x3D;&#x3D;</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>IIS安装</title>
-      <link href="/2023/04/25/IIS%E5%AE%89%E8%A3%85/"/>
-      <url>/2023/04/25/IIS%E5%AE%89%E8%A3%85/</url>
-      
-        <content type="html"><![CDATA[<p>IIS </p><span id="more"></span><center><p><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.001.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.002.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.003.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.004.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.005.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.006.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.007.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.008.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.009.jpeg"><br><img src="/img/iis/IIS%E5%AE%89%E8%A3%85.010.jpeg">    </center></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 服务器 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Windows服务器 </tag>
-            
-            <tag> IIS </tag>
             
         </tags>
       
